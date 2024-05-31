@@ -11,7 +11,7 @@ export default {
   input: 'index.js',
   external: ['color-name', 'html-to-vdom', 'jszip', 'virtual-dom', 'xmlbuilder2', 'html-entities'],
   plugins: [
-    resolve(),
+    resolve({ browser: true }),
     json(),
     commonjs(),
     builtins(),
